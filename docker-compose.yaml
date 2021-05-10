@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+
+  website:
+    build: ./prueba
+    container_name: website
+    command: npm start
+    volumes:
+      - ./prueba/:/usr/src/app
+    ports:
+      - 3000:3000 
